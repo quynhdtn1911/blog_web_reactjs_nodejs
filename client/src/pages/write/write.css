@@ -1,0 +1,101 @@
+.write{
+    display: flex;
+    justify-content: center;
+    margin: 64px 0;
+    font-family: 'Lora', serif;
+}
+
+.writeContainer{
+    width: 70%;
+}
+
+.writeImgGroup{
+    position: relative;
+}
+
+.writeImgInput{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all  ease .5s;
+    -ms-transition: all  ease .5s;
+    -o-transition: all  ease .5s;
+    transition: all  ease .5s;
+}
+
+.writeImg{
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.writeImgGroup:hover .writeImgInput{
+    opacity: 1;
+}
+
+.writeForm{
+    margin-top: 16px;
+    width: 100%;
+}
+
+.writeImgLabel{
+    border-radius: 50%;
+    border: 2px solid #666;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px;
+}
+
+.writeIcon{
+    font-size: 24px;
+    color: #666;
+    font-weight: 800;
+}
+
+.writeInput{
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    font-family: monospace;
+}
+
+.writeInputTitle{
+    padding: 8px 0;
+    border: none;
+    border-bottom: 1px solid #aaa;
+}
+
+.writeInputTitle::placeholder{
+    color: #000;
+    font-family: monospace;
+}
+
+.writeInputDesc,
+.writeInputCategory{
+    margin-top: 32px;
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+.writeInputCategory{
+    width: 50%;
+}
+.writeBtn{
+    background: teal;
+    color: #fff;
+    font-size: 16px;
+    float: right;
+    margin-top: 16px;
+}

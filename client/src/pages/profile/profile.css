@@ -1,0 +1,159 @@
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileContainer{
+    width: 800px;
+    max-width: 100%;
+    margin: 64px 0;
+    padding: 64px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.profileOption{
+    width: 100%;
+    text-align: right;
+    position: relative;
+}
+
+.profileOptionLabel img{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.profileOptionList{
+    list-style: none;
+    display: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border-radius: 6px;
+}
+
+.profileOptionItem{
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.profileOptionItem:hover{
+    background: #9fd5dd;
+    color: #fff;
+}
+
+.profileOption:hover .profileOptionList{
+    display: inline-block;
+}
+.profileAvatar{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    object-fit: center;
+}
+
+.profileImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profileInputAvatar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: ease-in 0.2s;
+}
+
+.profileAvatarLabel img{
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+}
+
+.profileAvatar:hover .profileInputAvatar{
+    opacity: 1;
+}
+
+.profileContent{
+    margin-top: 32px;
+    font-family: monospace;
+}
+
+.profileInfo{
+    margin-top: 32px;
+    font-size: 16px;
+    width: 600px;
+    max-width: 100%;
+}
+
+.profileUsername{
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+}
+
+.profileForm{
+    padding-top: 32px;
+    width: 80%;
+}
+
+.profileInputGroup{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 32px;
+}
+
+.profileLabel{
+    display: inline-block;
+    min-width: 180px;
+    font-size: 18px;
+}
+
+.profileSubLabel{
+    min-width: 120px;
+    margin-left: 6px;
+}
+
+.profileInput[type="text"],
+.profileInput[type="email"],
+.profileInput[type="password"]{
+    flex: 1;
+    padding: 8px 16px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #5a5151;
+    font-size: 18px;
+    font-family: monospace;
+}
+
+.profileInput[type="password"]{
+    border: 1px solid #5a5151;
+    border-radius: 6px;
+}
+
+.profileError{
+    font-size: 15px;
+    color: red;
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.btnGroupEdit{
+    width: 80%;
+}
